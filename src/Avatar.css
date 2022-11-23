@@ -1,0 +1,78 @@
+.img {
+    float: left;
+    height: 250px;
+    animation: mymove 2s ease-in-out ;
+    animation-timing-function: ease-out;
+}
+
+.container {
+    display: grid;
+    margin-top: 60px;
+}
+
+.info {
+    text-align: center;
+    margin-top: -277px;
+    animation: mymove1 1s ease-in-out ;
+    animation-timing-function: ease-out;
+}
+
+@keyframes mymove {
+  from {
+    transform: translateX(-30%);
+  }
+  to {
+    transform: translateX(0%);
+  }
+}
+
+@keyframes mymove1 {
+  from {
+    transform:
+      translateY(-50%);
+    opacity: 0;
+  }
+  to {
+    transform:
+      rotate(0deg) translateY(0%);
+    opacity: 1;
+  }
+}
+
+
+.button {
+  background-color: black;
+  border: none;
+  color: white;
+  padding: 18px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  width: -webkit-fill-available;
+  border-radius: 15px;
+}
+
+.form {
+ 
+    max-width: var(--fixed-width);
+    margin: 0 auto;
+    margin-bottom: 4rem;
+    padding: 1rem 2rem;
+    border-radius: var(--radius);
+  }
+  .form input {
+   
+    border-color: black;
+    border-radius: 10px;
+    padding: 0.30rem 0.5rem;
+  }
+  .form-control {
+    margin: 0.5rem 0;
+    display: grid;
+    grid-template-columns: 100px 1fr;
+    align-items: center;
+  }
+
