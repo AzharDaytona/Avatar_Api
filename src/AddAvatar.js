@@ -2,7 +2,7 @@ import { useState } from "react";
 import Avatar from "./Avatar";
 import "./Modal.css";
 import { AvatarInfo } from "./index";
-
+//test amend
 //Add avatar component
 const AddAvatar = () => {
   //modal initial set to false
