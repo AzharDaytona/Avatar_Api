@@ -19,7 +19,7 @@ export const AvatarInfo = [
   {
     username: "Ervin Howell",
     email: "Shanna@melissa.tv",
-    phone: "010-692-6593 x09125",
+    phone: "10-692-6593 x09125",
     company: "Deckow-Crist",
     website: "anastasia.net",
     address: "Victor Plains, Suite 879, Wisokyburgh, 90566-7771",
