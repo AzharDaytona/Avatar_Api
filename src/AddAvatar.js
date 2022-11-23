@@ -3,6 +3,7 @@ import Avatar from "./Avatar";
 import "./Modal.css";
 import { AvatarInfo } from "./index";
 //test amend
+//branch
 //Add avatar component
 const AddAvatar = () => {
   //modal initial set to false
