@@ -1,12 +1,11 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
+import Formik from "./Formik";
 import AddAvatar from "./AddAvatar";
-import Avatar from "./Avatar";
 import "./Avatar.css";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
-//Array info about avatar
 export const AvatarInfo = [
   {
     username: "Leanne Graham",
@@ -77,75 +76,15 @@ export const AvatarInfo = [
   },
 ];
 
-const results = [];
-
-AvatarInfo.forEach(avatarinfo => {
-  results.push(
-
-<Avatar
-      username={avatarinfo.username}
-      email={avatarinfo.email}
-      phone={avatarinfo.phone}
-      company={avatarinfo.company}
-      website={avatarinfo.website}
-      Address={avatarinfo.Address}
-    />
-
-  );
-
-  });
-
 root.render(
   <React.StrictMode>
-    <AddAvatar></AddAvatar>
-{results}
-    {/* <Avatar
-      username={AvatarInfo[0].username}
-      email={AvatarInfo[0].email}
-      phone={AvatarInfo[0].phone}
-      company={AvatarInfo[0].company}
-      website={AvatarInfo[0].website}
-      Address={AvatarInfo[0].Address}
-    />
-    <Avatar
-      username={AvatarInfo[1].username}
-      email={AvatarInfo[1].email}
-      phone={AvatarInfo[1].phone}
-      company={AvatarInfo[1].company}
-      website={AvatarInfo[1].website}
-      Address={AvatarInfo[1].Address}
-    />
-    <Avatar
-       username={AvatarInfo[2].username}
-       email={AvatarInfo[2].email}
-       phone={AvatarInfo[2].phone}
-       company={AvatarInfo[2].company}
-       website={AvatarInfo[2].website}
-       Address={AvatarInfo[2].Address}
-    />
-    <Avatar
-       username={AvatarInfo[3].username}
-       email={AvatarInfo[3].email}
-       phone={AvatarInfo[3].phone}
-       company={AvatarInfo[3].company}
-       website={AvatarInfo[3].website}
-       Address={AvatarInfo[3].Address}
-    />
-    <Avatar
-     username={AvatarInfo[4].username}
-     email={AvatarInfo[4].email}
-     phone={AvatarInfo[4].phone}
-     company={AvatarInfo[4].company}
-     website={AvatarInfo[4].website}
-     Address={AvatarInfo[4].Address}
-    />
-    <Avatar
-      username={AvatarInfo[5].username}
-      email={AvatarInfo[5].email}
-      phone={AvatarInfo[5].phone}
-      company={AvatarInfo[5].company}
-      website={AvatarInfo[5].website}
-      Address={AvatarInfo[5].Address}
-    /> */}
+    {/* <Formik></Formik> */}
+    
+
+<AddAvatar></AddAvatar>
+
   </React.StrictMode>
 );
+
+
+
